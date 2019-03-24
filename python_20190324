@@ -1,0 +1,604 @@
+>>> while true:
+...     response=input('inpput number:')
+...     if int(response) % 10 == 0:
+...             print('dived 10 reult is 0')
+...             break
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> while True:
+...     response=input('inpput number:')
+...     if int(response) % 10 == 0:
+...             print('dived 10 reult is 0')
+...             break
+... 
+inpput number:1
+inpput number:2
+inpput number:3
+inpput number:4
+inpput number:5
+inpput number:6
+inpput number:7
+inpput number:8
+inpput number:9
+inpput number:10
+dived 10 reult is 0
+>>> "Hellow world"
+'Hellow world'
+>>> 'Hellow world'
+'Hellow world'
+>>> "Hellow world'
+  File "<stdin>", line 1
+    "Hellow world'
+                 ^
+SyntaxError: EOL while scanning string literal
+>>> "It's a good thing"
+"It's a good thing"
+>>> '"Yes", he said, "I agree!"'
+'"Yes", he said, "I agree!"'
+>>> "abc" "def"
+'abcdef'
+>>> "abd"       "efg"
+'abdefg'
+>>> ["abc"
+... "def",
+... "ghi"]
+['abcdef', 'ghi']
+>>> """This
+... Multi Line
+... ...."""
+'This\nMulti Line\n....'
+>>> '''This
+... multi line
+... ...'''
+'This\nmulti line\n...'
+>>> a="Hello\n New line \\ print any \''\'' "
+>>> print(a)
+Hello
+ New line \ print any '''' 
+>>> '\xe5'
+'\xe5'
+>>> 
+>>> 
+>>> "\xe5"
+'\xe5'
+>>> a='\xe5'
+>>> print(a)
+?
+>>> str(386)
+'386'
+>>> str(3.14)
+'3.14'
+>>> str(6.02e0)
+'6.02'
+>>> str(6.02e10)
+'60200000000.0'
+>>> s='abcdef'
+>>> s[3]
+'d'
+>>> 
+>>> 
+>>> type("abcdef")
+<type 'str'>
+>>> ','.join(['a','b','cde'])
+'a,b,cde'
+>>> 'a,b,cde'.split(',')
+['a', 'b', 'cde']
+>>> name='a,b,cde'.split(',')
+>>> print(name[0])
+a
+>>> departure, _, arrival = 'Newyork-Seoul'.partition('-')
+>>> deoarture
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'deoarture' is not defined
+>>> departure
+'Newyork'
+>>> _
+'-'
+>>> arrival
+'Seoul'
+>>> "Name: {}, Age: {}".format("Kim",13)
+'Name: Kim, Age: 13'
+>>> "Name: {0}, Age: {1}".format("Kim",13)
+'Name: Kim, Age: 13'
+>>> "Name: {0}, Age: {1}: {0}'s age is {1}".format("Kim",13)
+"Name: Kim, Age: 13: Kim's age is 13"
+>>> "Name: {name}, Age: {age}".format(name='Kim',age=15)
+'Name: Kim, Age: 15'
+>>> print(math.pi)
+3.14159265359
+>>> 
+>>> 
+>>> 'Mathmatica Pie is {m.pi}'.format(m=math)
+'Mathmatica Pie is 3.14159265359'
+>>> x='abcDef"
+  File "<stdin>", line 1
+    x='abcDef"
+             ^
+SyntaxError: EOL while scanning string literal
+>>> x='abcdFgh'
+>>> a.capitalize()
+'\xe5'
+>>> x.capitalize()
+'Abcdfgh'
+>>> s="   abc    "
+>>> s.strip()
+'abc'
+>>> 
+>>> s
+'   abc    '
+>>> len("abcdefghijklmnopqrstuvwxyz")
+26
+>>> abcdefghijklmnopqrstuvwxyz
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'abcdefghijklmnopqrstuvwxyz' is not defined
+>>> >>> b = bdef'
+>>> b=b'abcde'
+>>> b
+'abcde'
+>>> print(b)
+abcde
+>>> 
+>>> c=b'abcde'
+>>> c
+'abcde'
+>>> print(c)
+abcde
+>>> type(c)
+<type 'str'>
+>>> s='abc def ghi'
+>>> s.split()
+['abc', 'def', 'ghi']
+>>> s=b'abc def ghi'
+>>> s.split()
+['abc', 'def', 'ghi']
+>>> s=Vi er så glad for å høre og lære om Python!'
+  File "<stdin>", line 1
+    s=Vi er så glad for å høre og lære om Python!'
+          ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> s='Vi er så glad for å høre og lære om Python!'
+>>> b=s.encode('utf-8')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 7: ordinal not in range(128)
+>>> s=Vi er s\xc3\xa5 glad for \xc3\xa5 h\xc3\xb8re og l\xc3\xa6re om Python!'
+  File "<stdin>", line 1
+    s=Vi er s\xc3\xa5 glad for \xc3\xa5 h\xc3\xb8re og l\xc3\xa6re om Python!'
+          ^
+SyntaxError: invalid syntax
+>>> s='Vi er s\xc3\xa5 glad for \xc3\xa5 h\xc3\xb8re og l\xc3\xa6re om Python!'
+>>> b=s.encode('utf-8')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 7: ordinal not in range(128)
+>>> 
+>>> b = b'abcde'
+>>> b
+'abcde'
+>>> [1,3,5,7]
+[1, 3, 5, 7]
+>>> a=[1,3,5,7]
+>>> a[0]
+1
+>>> type(a)
+<type 'list'>
+>>> a[3]
+7
+>>> a[4]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> ['a',123',false]
+  File "<stdin>", line 1
+    ['a',123',false]
+                   ^
+SyntaxError: EOL while scanning string literal
+>>> a=['a',123',False]
+  File "<stdin>", line 1
+    a=['a',123',False]
+                     ^
+SyntaxError: EOL while scanning string literal
+>>> a=['a',123',True]
+  File "<stdin>", line 1
+    a=['a',123',True]
+                    ^
+SyntaxError: EOL while scanning string literal
+>>> a=['a',123,True]
+>>> a[0]
+'a'
+>>> a[2]
+True
+>>> b=list()
+>>> b
+[]
+>>> c=[]
+>>> c
+[]
+>>> b.append(5)
+>>> b[0]
+5
+>>> b.append(1.5)
+>>> b[1]
+1.5
+>>> c.append(10)
+>>> c
+[10]
+>>> b=b+c
+>>> b
+[5, 1.5, 10]
+>>> list("abcde")
+['a', 'b', 'c', 'd', 'e']
+>>> s='abc def ghi jkl'.split()
+>>> s
+['abc', 'def', 'ghi', 'jkl']
+>>> s[0]
+'abc'
+>>> s[1]
+'def'
+>>> s[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> s[4]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> s[3]
+'jkl'
+>>> s[-1]
+'jkl'
+>>> s[-2]
+'ghi'
+>>> s[-3]
+'def'
+>>> s[-4]
+'abc'
+>>> s[1:4]
+['def', 'ghi', 'jkl']
+>>> s[0:2]
+['abc', 'def']
+>>> s[0:01]
+['abc']
+>>> s[0:-1]
+['abc', 'def', 'ghi']
+>>> s[0:]
+['abc', 'def', 'ghi', 'jkl']
+>>> s[:2]
+['abc', 'def']
+>>> s[:]
+['abc', 'def', 'ghi', 'jkl']
+>>> s[:] == s
+True
+>>> s2=s[:]
+>>> s2
+['abc', 'def', 'ghi', 'jkl']
+>>> s is s2
+False
+>>> s3=s.copy()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'copy'
+>>> s3=list(s)
+>>> s is s3
+False
+>>> s3
+['abc', 'def', 'ghi', 'jkl']
+>>> s[::-1]
+['jkl', 'ghi', 'def', 'abc']
+>>> s[::1]
+['abc', 'def', 'ghi', 'jkl']
+>>> s[::2]
+['abc', 'ghi']
+>>> s=list["abcdefghijklmnopqrstvwxyz"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'type' object has no attribute '__getitem__'
+>>> a=list("abcde")
+>>> a
+['a', 'b', 'c', 'd', 'e']
+>>> a[::-1]
+['e', 'd', 'c', 'b', 'a']
+>>> a=list("abcdefghijklmnopqrstuvwxyz")
+>>> a[::-1]
+['z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a']
+>>> a=[1,2,3]
+>>> a
+[1, 2, 3]
+>>> id(a)
+4418743904
+>>> a[0]=5
+>>> a
+[5, 2, 3]
+>>> id(a)
+4418743904
+>>> x={1,2,3}
+>>> x
+set([1, 2, 3])
+>>> id(x)
+4417895216
+>>> x|={4,5,6}
+>>> x
+set([1, 2, 3, 4, 5, 6])
+>>> id(x)
+4417895216
+>>> 
+>>> 
+>>> 
+>>> s="abc"
+>>> s
+'abc'
+>>> id(s)
+4417272048
+>>> s[0]
+'a'
+>>> s[1]
+'b'
+>>> s[2]
+'c'
+>>> s[0]='s'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> s='def'
+>>> id(s)
+4418316528
+>>> a=[1,2,3]
+>>> a
+[1, 2, 3]
+>>> b=a
+>>> id(a)
+4418163416
+>>> id(b)
+4418163416
+>>> b
+[1, 2, 3]
+>>> 
+>>> 
+>>> a="abc"
+>>> a
+'abc'
+>>> b=a
+>>> id(a)
+4417272048
+>>> id(b)
+4417272048
+>>> a="def"
+>>> id(a)
+4418316528
+>>> id(b)
+4417272048
+>>> a=[1,2,3]
+>>> b=a
+>>> c=a[:]
+>>> id(a)
+4418163416
+>>> id(b)
+4418163416
+>>> id(c)
+4418735424
+>>> a==b
+True
+>>> a==c
+True
+>>> aisc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'aisc' is not defined
+>>> a is c
+False
+>>> a is b
+True
+>>> a is c
+False
+>>> a=[[1,2],[3,4]]
+>>> a
+[[1, 2], [3, 4]]
+>>> b=a[:]
+>>> id(a)
+4418278536
+>>> id(b)
+4418762152
+>>> id(a[0]
+... 
+... )
+4418729096
+>>> id(a[0])
+4418729096
+>>> id(b[0])
+4418729096
+>>> a[0]=[8,9]
+>>> id(a[0])
+4418163416
+>>> id(b[0])
+4418729096
+>>> a[0]
+[8, 9]
+>>> b[0]
+[1, 2]
+>>> a[1]
+[3, 4]
+>>> a[1].append(5)
+>>> a[1]
+[3, 4, 5]
+>>> b[1]
+[3, 4, 5]
+>>> id(a[1])
+4418743904
+>>> id(b[1])
+4418743904
+>>> import copy
+>>> a=[[1,2],[3,4]]
+>>> b=cop.copy(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cop' is not defined
+>>> b=copy.copy(a)
+>>> a
+[[1, 2], [3, 4]]
+>>> b
+[[1, 2], [3, 4]]
+>>> a[1].append(5)
+>>> a
+[[1, 2], [3, 4, 5]]
+>>> n
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'n' is not defined
+>>> 
+>>> 
+>>> a
+[[1, 2], [3, 4, 5]]
+>>> b
+[[1, 2], [3, 4, 5]]
+>>> b=copy.deepcopy(a)
+>>> 
+>>> 
+>>> 
+>>> a[1].append(6)
+>>> a
+[[1, 2], [3, 4, 5, 6]]
+>>> b
+[[1, 2], [3, 4, 5]]
+>>> a=[5,3]
+>>> b=a*3
+>>> b
+[5, 3, 5, 3, 5, 3]
+>>> id(a)
+4418279040
+>>> id(b)
+4418740808
+>>> id(a[0])
+140591095650104
+>>> id(b[0])
+140591095650104
+>>> a=['Seoul','Daejun','Pusan']
+>>> a
+['Seoul', 'Daejun', 'Pusan']
+>>> a.index('Pusan')
+2
+>>> a.index('Daegu')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'Daegu' is not in list
+>>> 
+>>> 
+>>> Pusan in a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Pusan' is not defined
+>>> Pusan in a[:]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Pusan' is not defined
+>>> a.count(1)
+0
+>>> a.count('Pusan')
+1
+>>> a
+['Seoul', 'Daejun', 'Pusan']
+>>> 
+>>> 
+>>> a.append('Daegu')
+>>> a
+['Seoul', 'Daejun', 'Pusan', 'Daegu']
+>>> a.insert(1,'Inchon')
+>>> a
+['Seoul', 'Inchon', 'Daejun', 'Pusan', 'Daegu']
+>>> a
+['Seoul', 'Inchon', 'Daejun', 'Pusan', 'Daegu']
+>>> 
+>>> 
+>>> a[4]
+'Daegu'
+>>> del a[4]
+>>> a
+['Seoul', 'Inchon', 'Daejun', 'Pusan']
+>>> a.insert(3,'Daegu')
+>>> a
+['Seoul', 'Inchon', 'Daejun', 'Daegu', 'Pusan']
+>>> a.remove('Daejun')
+>>> a
+['Seoul', 'Inchon', 'Daegu', 'Pusan']
+>>> a.reverse()
+>>> 
+>>> 
+>>> a
+['Pusan', 'Daegu', 'Inchon', 'Seoul']
+>>> 
+>>> 
+>>> a.reverse()
+>>> 
+>>> 
+>>> a.reverse()
+>>> 
+>>> 
+>>> a.reverse()
+>>> a
+['Seoul', 'Inchon', 'Daegu', 'Pusan']
+>>> 
+>>> 
+>>> a.sirt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'sirt'
+>>> a.sort
+<built-in method sort of list object at 0x10760f5a8>
+>>> a.sort()
+>>> 
+>>> 
+>>> a
+['Daegu', 'Inchon', 'Pusan', 'Seoul']
+>>> 
+>>> 
+>>> a.sort(reverse=true)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> a.sort(reverse=True)
+>>> 
+>>> 
+>>> a
+['Seoul', 'Pusan', 'Inchon', 'Daegu']
+>>> a.sort(reverse=False)
+>>> 
+>>> 
+>>> a
+['Daegu', 'Inchon', 'Pusan', 'Seoul']
+>>> a.sort(key=len)
+>>> 
+>>> 
+>>> a
+['Daegu', 'Pusan', 'Seoul', 'Inchon']
+>>> list(a)
+['Daegu', 'Pusan', 'Seoul', 'Inchon']
+>>> 
+>>> 
+>>> a
+['Daegu', 'Pusan', 'Seoul', 'Inchon']
+>>> 
+>>> 
+>>> b=reversed(a)
+>>> 
+>>> b
+<listreverseiterator object at 0x10775d6d0>
+>>> 
+>>> c=sorted(a)
+>>> c
+['Daegu', 'Inchon', 'Pusan', 'Seoul']
+>>> 
+>>> 
+>>> 
+>>> a
+['Daegu', 'Pusan', 'Seoul', 'Inchon']
+>>> c
+['Daegu', 'Inchon', 'Pusan', 'Seoul']
+>>> b
+<listreverseiterator object at 0x10775d6d0>
+>>> list(b)
+['Inchon', 'Seoul', 'Pusan', 'Daegu']
